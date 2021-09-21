@@ -15,6 +15,11 @@
         line-height: 25px;
         margin-top: 68px;
     }
+    &_form {
+        width: 303px;
+        height: 54px;
+        font-size: 16px;
+    } 
 }
 @media(max-width:767px) {
     .button_main {
