@@ -16,3 +16,16 @@
         }
     }
 }
+@media (max-width:1024px) {
+    .feed-form {
+        margin-left: 30px;
+    } 
+}
+@media (max-width:575px) {
+    .feed-form {
+        width: 280px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+}

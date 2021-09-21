@@ -7,6 +7,24 @@
         font-weight: 500;
         font-size: 20px;
         line-height: 30px;
-        margin-bottom: 25px;
+    }
+}
+@media (max-width:1024px) {
+    .consultation__descr {
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 30px;
+        padding-left: 30px;
+    }
+}
+@media (max-width:575px) {
+    .consultation__descr {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        padding: 0;
+        margin-top: 30px;
+
     }
 }
