@@ -38,9 +38,12 @@
     }       
     &__content {
         margin-top: 60px;
-        display: flex;
+        display: none;
         justify-content: space-between;
         flex-wrap: wrap;
+        &_active {
+            display: flex;
+        }
     }
     &-item {
         width: 300px;
@@ -48,6 +51,7 @@
         border: 2px solid #E8E8E8;
         padding: 20px 20px 26px 20px;
         overflow: hidden;
+        margin-bottom: 20px;
         &__img {
             display: block;
             max-width: 100%;
@@ -79,6 +83,8 @@
             margin: 0 auto;
             margin-top: 17px;
             text-align: center;
+            text-decoration: underline;
+            text-transform: uppercase;
             &:hover {
                 color:$color-red;
             }
@@ -151,6 +157,22 @@
                     background-color: $color-red;
                     left: -14px;
                     top: 7px;
+                }
+            }
+            &__back {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(calc(-50% - 19px));
+                display: block;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 14px;
+                color: $color-red;
+                text-decoration: none;
+                text-transform: uppercase;
+                &:hover {
+                    color:$color-red;
                 }
             }
         }
