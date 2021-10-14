@@ -1,0 +1,58 @@
+.review {
+    min-height: 1048px;
+    padding-bottom: 49px;
+
+    &__wrapper {
+        display: flex;
+        margin: 60px 30px 0;
+    }
+    &__img {
+        height: 169px;
+        width: 169px;
+        margin-right: 61px;
+    }
+    &__text {
+        max-width: 686px;
+    }
+    &__name {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+    }
+    &__practice {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    &__descr {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 10px;
+    }
+}
+
+@media(max-width:768px) {
+    .review {
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center
+        }
+        &__img {
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+    }
+}
+@media(max-width:425px) {
+    .review {
+        h2 {
+            font-size: 25px;
+        }
+        &__wrapper {
+            margin-top: 30px;
+        }
+    }
+}
