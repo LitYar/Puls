@@ -1,0 +1,14 @@
+.pageup {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    border: solid 2px rgba(255, 0, 0,0.5);
+    border-radius: 50%;
+    img {
+        width: 100%;
+        opacity: 0.5;
+    }
+}
