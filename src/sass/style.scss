@@ -1,7 +1,13 @@
+@import 'libs/animate';
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/slick';
+
 *	{
-		font-family: "MuseoModerno", sans-serif;
+font-family: "MuseoModerno", sans-serif;
+font-display: swap;
 }
 @import 'base/variables';
+@import 'base/animations';
 
 .container {
 		max-width: 950px;
@@ -21,4 +27,3 @@
 @import 'blocks/footer';
 @import 'blocks/modal';
 @import 'blocks/pageup';
-@import 'base/animations';
