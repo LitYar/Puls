@@ -39,11 +39,16 @@
            button {
                 border-radius: 50%;
                 border-color: rgb(0, 0, 0, 0.5);
-                background-color: rgba(255, 255, 255, 1);
+                background-color: rgb(255, 255, 255);
                 font-size: 0;
                 width: 30px;
                 height: 30px;
                 margin: 0 20px;
+                transition: 0.5s all;
+                &:hover {
+                    box-shadow: 0 0 15px 3px $color-red;
+                    border: none;
+                }
            }
 
        }
