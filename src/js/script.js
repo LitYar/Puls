@@ -79,6 +79,11 @@ $(document).ready(function(){
     //php mailer
     $('form').submit(function(e) {
         e.preventDefault();
+
+        if (!$(this).valid()) {
+            return;
+        }
+
         $.ajax({
             type: "POST",
             url: "mailer/smart.php",
