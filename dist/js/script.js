@@ -44,7 +44,7 @@ $(document).ready(function(){
     $('.button_mini').each(function(i) {
         $(this).on('click', function() {
             $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
-            $('.overlay, #thanks').fadeIn('slow');
+            $('.overlay, #order').fadeIn('slow');
         });
     });
     //JQuery validation
@@ -85,7 +85,8 @@ $(document).ready(function(){
             data: $(this).serialize()
         }).done(function() {
             $(this).find('input').val("");
-
+            $('#consultation, #order'). fadeOut();
+            $('overlay, #thanks'). fadeIn('slow');
             $('form').trigger('reset');
         });
         return false;
